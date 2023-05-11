@@ -1,13 +1,19 @@
-import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import Quebec from "./components/Quebec";
 import Footer from "./components/Footer";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <Footer />
-    </div>
+    <main>
+      <div className="App">
+        <Routes>
+          <Route path="/canada/" element={<Quebec />} />
+        </Routes>
+        <Footer />
+      </div>
+    </main>
   );
 }
 
