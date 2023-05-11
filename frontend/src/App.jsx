@@ -8,7 +8,8 @@ function App() {
     <main>
       <div className="App">
         <Routes>
-          <Route path="/canada/" element={<Quebec />} />
+          <Route path="/canada/quebec" element={<Quebec />} />
+          {/* <Route path="/canada/toronto" element={<Toronto />} /> */}
         </Routes>
       </div>
     </main>

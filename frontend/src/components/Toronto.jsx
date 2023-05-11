@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function CityQuebec() {
+export default function CardCity() {
   const [city, setCity] = useState();
 
   const getCity = () => {
@@ -11,7 +11,6 @@ export default function CityQuebec() {
       .then((data) => setCity(data))
       .catch((err) => console.error(err));
   };
-
   useEffect(() => {
     getCity();
   }, []);
@@ -21,15 +20,15 @@ export default function CityQuebec() {
   }
 
   return (
-    <div id="grid-container">
-      <figure id="grid-image">
+    <div>
+      <figure>
         <img src={city.preview.source} alt={city.name} />
       </figure>
       <figcaption>
-        <p id="grid-titre">
+        <p>
           {city.name} {city.address.city}
         </p>
-        <p id="grid-description">{city.wikipedia_extracts.text}</p>
+        <p>{city.wikipedia_extracts.text}</p>
       </figcaption>
     </div>
   );
