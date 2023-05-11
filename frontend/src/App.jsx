@@ -1,13 +1,17 @@
-import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import Quebec from "./components/Quebec";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <p>coucou</p>
-    </div>
+    <main>
+      <div className="App">
+        <Routes>
+          <Route path="/canada/" element={<Quebec />} />
+        </Routes>
+      </div>
+    </main>
   );
 }
 
