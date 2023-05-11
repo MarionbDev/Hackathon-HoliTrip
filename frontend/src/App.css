@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "arial";
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel .overlay {
+  width: 80%;
+  height: 60%;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  text-align: left;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.carousel:hover .overlay {
+  display: block;
+}
+.carousel .thumb {
+  margin: 0 50px;
+  height: 100px;
+}
+.carousel .thumbs-wrapper {
+  position: absolute;
+  margin-top: -200px;
+}
+
+.carousel img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+@media screen and (min-width: 400px) {
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 97, 105, 0.989);
+    border-radius: 20px;
+  }
+
+  .carousel img {
+    height: 45em;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
 #MoodContainer {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
