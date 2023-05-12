@@ -1,12 +1,12 @@
-import CarrouselCanada from "@components/CarouselCanada";
+import CarrouselAustralia from "@components/CarouselAustralia";
 import MoodBoardCanada from "@components/MoodBoardCanada";
 import PresentationCanada from "@components/PresentationCanada";
 
-export default function Canada() {
+export default function Australia() {
   return (
     <>
       <header>
-        <CarrouselCanada />
+        <CarrouselAustralia />
       </header>
       <PresentationCanada />
       <h2 className="title text-center mb-5">MOOD BOARD</h2>
