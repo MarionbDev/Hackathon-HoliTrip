@@ -58,11 +58,11 @@ function App() {
             <Route path="/australia/adelaide" element={<Adelaide />} />
             <Route path="/brazil" element={<Brazil />} />
             <Route path="/brazil/rio" element={<Rio />} />
-            <Route path="/brazil/sao_paulo" element={<SaoPaulo />} />
+            <Route path="/brazil/sao-paulo" element={<SaoPaulo />} />
             <Route path="/brazil/curitiba" element={<Curitiba />} />
-            <Route path="/brazil/porto_alegre" element={<PortoAlegre />} />
+            <Route path="/brazil/porto-alegre" element={<PortoAlegre />} />
             <Route path="/brazil/petropolis" element={<Petropolis />} />
-            <Route path="/brazil/juiz_de_fora" element={<JuizDeFora />} />
+            <Route path="/brazil/juiz-de-fora" element={<JuizDeFora />} />
             <Route path="/radio" element={<RadioRoad />} />
           </Routes>
           <Footer />
