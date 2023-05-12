@@ -1,6 +1,6 @@
 import CarrouselAustralia from "@components/CarouselAustralia";
-import MoodBoardCanada from "@components/MoodBoardCanada";
-import PresentationCanada from "@components/PresentationCanada";
+import PresentationAustralia from "@components/PresentationAustralia";
+import MoodBoardAustralia from "@components/MoodBoardAustralia";
 
 export default function Australia() {
   return (
@@ -8,9 +8,9 @@ export default function Australia() {
       <header>
         <CarrouselAustralia />
       </header>
-      <PresentationCanada />
+      <PresentationAustralia />
       <h2 className="title text-center mb-5">MOOD BOARD</h2>
-      <MoodBoardCanada />
+      <MoodBoardAustralia />
     </>
   );
 }
