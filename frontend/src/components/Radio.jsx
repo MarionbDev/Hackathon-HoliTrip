@@ -20,13 +20,13 @@ export default function Radio({ favicon, name, country, url }) {
 
   return (
     <div>
-      <figure>
+      <figure className="bg-gradient-to-t from-[#eeeaf2] to-slate-500">
         {favicon ? (
           <div className="sm:h-40 flex mb-1 md:mb-5">
             <img
               src={favicon}
               alt={name}
-              className="rounded-md md:w-40 mx-auto md:py-0 md:rounded-md sm:w-32 w-24 h-24 sm:h-32 md:h-auto"
+              className=" rounded-md md:w-40 mx-auto md:py-0 md:rounded-md sm:w-32 w-24 h-24 sm:h-32 md:h-auto"
             />
           </div>
         ) : (
@@ -48,13 +48,13 @@ export default function Radio({ favicon, name, country, url }) {
           <div>
             <button type="button" onClick={handlePlayRadio}>
               {playRadio === false ? (
-                <img src={playIcon} alt="play" className=" w-10 sm:w-16 mb-2" />
-              ) : (
                 <img
-                  src={pauseIcon}
-                  alt="pause"
-                  className="w-10 sm:w-16 mb-2"
+                  src={playIcon}
+                  alt="play"
+                  className=" w-8 sm:w-10 mb-2 mt-2 mr-2"
                 />
+              ) : (
+                <img src={pauseIcon} alt="pause" className="w-8 sm:w-8 mb-2" />
               )}
             </button>
           </div>
