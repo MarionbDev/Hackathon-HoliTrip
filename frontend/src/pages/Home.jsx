@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Carrousel from "@components/Carousel";
 import Presentation from "@components/Presentation";
 import ProposalList from "@components/ProposalList";
@@ -12,6 +13,9 @@ export default function Home() {
       <Presentation />
       <ProposalList />
       {/* <MoodBoard /> */}
+      <Link to="/radio">
+        <button type="button">RADIO</button>
+      </Link>
     </div>
   );
 }
