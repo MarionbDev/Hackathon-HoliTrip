@@ -19,12 +19,11 @@ const City = ({ cityId, apiKey }) => {
   }, [cityId, apiKey]);
 
   if (!visit) {
-    return <p>Loading the game...</p>;
+    return <p>Loading page...</p>;
   }
 
   return (
     <div className="mt-8">
-      <div className="h-72 -mt-8 bg-slate-500 mb-8" />
       <div className="md:grid md:grid-cols-3 md:gap-4 md:grid-flow-row md:grid- mb-12">
         <h2 className="title p-5 text-center uppercase col-start-1 col-end-4 row-start-1 row-end-2">
           {visit.name} {visit.address.city}

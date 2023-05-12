@@ -47,6 +47,7 @@ export default function RadioRoad() {
 
   return (
     <div>
+      <header className="h-72 -mt-8 bg-slate-500 mb-8" />
       <SearchBar query={searchInput} setQuery={setSearchInput} />
       <div className="flex flex-wrap justify-center md:mr-3 mx-3 gap-3">
         {radios.map((radio) => (
