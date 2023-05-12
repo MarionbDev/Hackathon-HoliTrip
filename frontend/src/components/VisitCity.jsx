@@ -19,7 +19,7 @@ const City = ({ cityId, apiKey }) => {
   }, [cityId, apiKey]);
 
   if (!visit) {
-    return <p>Loading the game...</p>;
+    return <p>Loading page...</p>;
   }
 
   return (
