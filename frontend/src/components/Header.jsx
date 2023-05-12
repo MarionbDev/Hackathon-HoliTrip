@@ -19,6 +19,15 @@ function Header() {
           <img className="md:w-20 md:h-20" src={RadioLogo} alt={RadioLogo} />
         </button>
       </Link>
+      <Link to="/">
+        <div>
+          <img
+            className="travel-logo z-3"
+            src="/src/assets/logohackaton2.png"
+            alt="logo"
+          />
+        </div>
+      </Link>
     </div>
   );
 }

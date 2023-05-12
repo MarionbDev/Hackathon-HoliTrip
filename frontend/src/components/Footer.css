@@ -8,9 +8,8 @@
 }
 
 .footer p {
-  font-size: 1.5rem;
-  flex: 1;
-  font-size: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -21,12 +20,14 @@
 }
 
 .logo {
-  width: 30px;
-  height: 30px;
+  height: 40px;
   margin-left: 10px;
 }
+.logo-footer {
+  width: 100%;
+}
 
-.footer img {
-  width: 2.5em;
-  height: 2.5em;
+.logo-site {
+  margin-top: 10px;
+  width: 85px;
 }

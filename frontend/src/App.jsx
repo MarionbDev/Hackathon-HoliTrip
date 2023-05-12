@@ -45,9 +45,9 @@ function App() {
             <Route path="/canada" element={<Canada />} />
             <Route path="/canada/toronto" element={<Toronto />} />
             <Route path="/canada/ottawa" element={<Ottawa />} />
-            <Route path="/canada/montreal" element={<Montreal />} />
+            <Route path="/canada/montréal" element={<Montreal />} />
             <Route path="/canada/quebec" element={<Quebec />} />
-            <Route path="/canada/thunder_bay" element={<ThunderBay />} />
+            <Route path="/canada/thunder-bay" element={<ThunderBay />} />
             <Route path="/canada/winnipeg" element={<Winnipeg />} />
             <Route path="/australia" element={<Australia />} />
             <Route path="/australia/brisbane" element={<Brisbane />} />
