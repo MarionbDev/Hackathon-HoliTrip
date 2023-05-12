@@ -1,18 +1,18 @@
-// import { Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="mt-10">
       <div className="footer">
-        {/* <Link to="/"> */}
-        <div className="logo-site">
-          <img
-            className="logo-footer"
-            src="/src/assets/logohackathon.png"
-            alt="Logo du site"
-          />
-        </div>
-        {/* </Link> */}
+        <Link to="/">
+          <div className="logo-site">
+            <img
+              className="logo-footer"
+              src="/src/assets/logohackathon.png"
+              alt="Logo du site"
+            />
+          </div>
+        </Link>
         <p> ©℗®™ Holitrip </p>
         <div className="logo-container">
           <img
