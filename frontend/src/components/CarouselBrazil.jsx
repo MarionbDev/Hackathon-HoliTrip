@@ -4,29 +4,29 @@ import { Carousel } from "react-responsive-carousel";
 
 const datas = [
   {
-    id: 1,
+    id: 10,
     image:
-      "https://cdn.pixabay.com/photo/2019/07/09/13/49/japan-4326883_1280.jpg",
+      "https://cdn.pixabay.com/photo/2020/01/31/21/24/brazil-4809003_1280.jpg",
     title: "Pays 1",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vehicula nisi. Vivamus aliquet suscipit leo, non aliquam lacus efficitur eget. `,
   },
   {
-    id: 2,
+    id: 11,
     image:
-      "https://cdn.pixabay.com/photo/2020/11/22/07/11/river-5765785_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/11/09/22/20/campos-do-jordao-2934837_1280.jpg",
     title: "Pays 2",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vehicula nisi. Vivamus aliquet suscipit leo, non aliquam lacus efficitur eget.`,
   },
   {
-    id: 3,
+    id: 12,
     image:
-      "https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/23/14/14/beach-1853147_1280.jpg",
     title: "Pays 3",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vehicula nisi. Vivamus aliquet suscipit leo, non aliquam lacus efficitur eget.`,
   },
 ];
 
-export default function Carrousel() {
+export default function CarrouselBrazil() {
   return (
     <Carousel
       autoPlay
