@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MoodBoardArray = [
   {
@@ -71,7 +72,8 @@ export default function MoodBoardCanada() {
   return (
     <div id="MoodContainer" className="">
       {MoodBoardArray.map((city) => (
-        <div
+        <Link
+          to={`/canada/${city.ville}`}
           id={city.ville}
           className="image-container border-solid border-4 border-white  relative"
         >
@@ -84,9 +86,8 @@ export default function MoodBoardCanada() {
           <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">
             <div className="Jour">{city.jour}</div>
             <div className="Ville font-bold">{city.ville}</div>
-            {/* <div className="city-description">{city.description}</div> */}
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const trips = [
   {
-    title: "Brésil",
+    title: "Brazil",
     image:
       "https://cdn.pixabay.com/photo/2015/06/14/23/35/rio-de-janeiro-809756_1280.jpg",
     id: 1,
@@ -11,11 +12,10 @@ const trips = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla tellus, porttitor in rhoncus non, laoreet at risus.",
   },
   {
-    title: "Australie",
+    title: "Australia",
     image:
       "https://cdn.pixabay.com/photo/2014/05/26/09/58/sydney-opera-house-354375_1280.jpg",
     id: 2,
-    genre: "Science-fiction",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla tellus, porttitor in rhoncus non, laoreet at risus.",
   },
@@ -51,14 +51,16 @@ export default function ProposalList() {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="image-container">
-              <img src={trip.image} alt={trip.title} />
-              {hoveredIndex === index && (
-                <div className="title-overlay">
-                  <h2>{trip.title}</h2>
-                </div>
-              )}
-            </div>
+            <Link to={`/${trip.title}`}>
+              <div className="image-container">
+                <img src={trip.image} alt={trip.title} />
+                {hoveredIndex === index && (
+                  <div className="title-overlay">
+                    <h2>{trip.title}</h2>
+                  </div>
+                )}
+              </div>
+            </Link>
           </div>
         ))}
       </div>
