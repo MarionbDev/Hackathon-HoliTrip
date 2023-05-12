@@ -46,6 +46,13 @@ main {
   object-position: 50% 50%;
 }
 
+.title {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  text-align: center;
+}
+
 @media screen and (min-width: 400px) {
   *::-webkit-scrollbar {
     width: 6px;
