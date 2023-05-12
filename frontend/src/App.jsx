@@ -1,6 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "@pages/Home";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+
 import "./App.css";
+import "./components/Footer.css";
+
 import "./components/loading.css";
 import RadioRoad from "./components/RadioRoad";
 import {
@@ -58,6 +62,7 @@ function App() {
           <Route path="/radio" element={<RadioRoad />} />
         </Routes>
       </div>
+      <Footer />
     </main>
   );
 }
