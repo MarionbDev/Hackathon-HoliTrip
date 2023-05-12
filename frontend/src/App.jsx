@@ -3,11 +3,12 @@ import Home from "@pages/Home";
 import Canada from "@pages/Canada";
 import Australia from "@pages/Australia";
 import Brazil from "@pages/Brazil";
-import "./App.css";
-import "./components/loading.css";
 import Header from "@components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
+import "./components/Footer.css";
+import "./components/loading.css";
 import RadioRoad from "./components/RadioRoad";
-
 import {
   Toronto,
   Ottawa,
@@ -64,6 +65,7 @@ function App() {
             <Route path="/brazil/juiz_de_fora" element={<JuizDeFora />} />
             <Route path="/radio" element={<RadioRoad />} />
           </Routes>
+          <Footer />
         </div>
       </main>
     </>

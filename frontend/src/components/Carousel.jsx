@@ -6,14 +6,16 @@ const datas = [
   {
     id: 1,
     image:
-      "https://cdn.pixabay.com/photo/2019/07/09/13/49/japan-4326883_1280.jpg",
+      "https://cdn.pixabay.com/photo/2020/11/22/07/11/river-5765785_1280.jpg",
+
     title: "Pays 1",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vehicula nisi. Vivamus aliquet suscipit leo, non aliquam lacus efficitur eget. `,
   },
   {
     id: 2,
     image:
-      "https://cdn.pixabay.com/photo/2020/11/22/07/11/river-5765785_1280.jpg",
+      "https://cdn.pixabay.com/photo/2019/07/09/13/49/japan-4326883_1280.jpg",
+
     title: "Pays 2",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vehicula nisi. Vivamus aliquet suscipit leo, non aliquam lacus efficitur eget.`,
   },
