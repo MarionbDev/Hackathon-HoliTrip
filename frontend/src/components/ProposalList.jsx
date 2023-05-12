@@ -35,7 +35,7 @@ export default function ProposalList() {
       <h2 className=" uppercase ml-4 my-6  py-1 text-lg  md:ml-36">
         Road Trips proposés
       </h2>
-      <div className="flex gap-6 overflow-x-auto  mx-3 md:gap-16 w-auto md:ml-11 md:mr-11 items-center justify-center">
+      <div className="flex gap-6 overflow-x-auto  mb-10 mx-3 md:gap-16 w-auto md:ml-11 md:mr-11 items-center justify-center">
         {trips.map((trip) => (
           <div className="w-24 md:w-72 flex-shrink-0  " key={trip.title}>
             <img src={trip.image} alt={trip.title} />
