@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
-// import "./Header1.css";
 // import { Link } from "react-router-dom";
-// function Header() {
+
+// function Header1() {
 //   const [searchExpanded, setSearchExpanded] = useState(false);
 //   const [searchTerm, setSearchTerm] = useState("");
 //   const handleSearchExpand = () => {
@@ -37,4 +37,4 @@
 //     </header>
 //   );
 // }
-// export default Header;
+// export default Header1;

@@ -6,6 +6,7 @@ import Brazil from "@pages/Brazil";
 import Header from "@components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
+import "./components/Header1.css";
 import "./components/Footer.css";
 import "./components/loading.css";
 import RadioRoad from "./components/RadioRoad";
@@ -38,6 +39,7 @@ function App() {
   return (
     <>
       <Header />
+
       <main>
         <div className="App">
           <Routes>
