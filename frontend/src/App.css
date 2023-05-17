@@ -115,7 +115,7 @@ main {
   }
 
   .carousel img {
-    height: 47em;
+    height: 50em;
     object-fit: cover;
     object-position: 50% 50%;
   }
@@ -124,6 +124,9 @@ main {
     top: 0.5rem;
     left: 2rem;
     width: 35rem;
+  }
+  .footer p {
+    font-size: 1.8rem;
   }
 }
 

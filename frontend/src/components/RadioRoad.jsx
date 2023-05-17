@@ -46,29 +46,26 @@ export default function RadioRoad() {
   }
 
   return (
-    <>
-      <div className="h-80 -mt-12 bg-slate-500 mb-8" />
-
-      <div className="mt-25">
-        <SearchBar query={searchInput} setQuery={setSearchInput} />
-        <div className="flex flex-wrap justify-center md:mr-3 mx-3 gap-3">
-          {radios.map((radio) => (
-            <div
-              key={radio.stationuuid}
-              className=" bg duration-150 h-36 rounded-md m-0 py-1 pb-1 px-2 w-36 sm:h-56 sm:w-44 md:h-64 md:w-56"
-            >
-              <Radio
-                favicon={radio.favicon ? radio.favicon : null}
-                name={radio.name}
-                country={radio.country}
-                url={radio.url}
-              />
-            </div>
-          ))}
-        </div>
-
-        <div className=" mb-16 md:hidden" />
+    <div>
+      <header className="h-72 -mt-8 bg-slate-500 mb-8" />
+      <SearchBar query={searchInput} setQuery={setSearchInput} />
+      <div className="flex flex-wrap justify-center md:mr-3 mx-3 gap-3">
+        {radios.map((radio) => (
+          <div
+            key={radio.stationuuid}
+            className=" bg-neutral-300 duration-150 h-36 rounded-md m-0 py-1 pb-1 px-2 w-36 sm:h-56 sm:w-44 md:h-64 md:w-56"
+          >
+            <Radio
+              favicon={radio.favicon ? radio.favicon : null}
+              name={radio.name}
+              country={radio.country}
+              url={radio.url}
+            />
+          </div>
+        ))}
       </div>
-    </>
+
+      <div className=" mb-16 md:hidden" />
+    </div>
   );
 }

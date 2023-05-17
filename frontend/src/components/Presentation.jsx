@@ -7,9 +7,6 @@ export default function Presentation() {
         <div className="p-5 text-center  md:row-start-1 md:row-end-2">
           <h1 className="text-xl md:text-3xl uppercase"> HoliTrip</h1>
         </div>
-        <div className="text-center row-start-2 row-end-3">
-          <h2>citation</h2>
-        </div>
         <div className="p-5 scroll-pl-8 text-left col-start-2 col-end-4 row-start-1 row-end-4 md:mr-16">
           Holitrip est une plateforme en ligne spécialisée dans l'organisation
           de road trips de 8 jours à travers différents pays. Notre site propose
