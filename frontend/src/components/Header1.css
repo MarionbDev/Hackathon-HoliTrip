@@ -1,70 +1,53 @@
-/* header {
-    background-color: transparent;
-    opacity: 0.8;
-    max-height: 80px;
-  }
-  nav {
-    position: fixed;
-    z-index: 150px;
-    width: 100%;
-    background-color: transparent;
-    height: 80px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 5px;
-  }
-  button[type="submit"] {
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+}
+button[type="submit"] {
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.search-container img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-left: 3rem;
+}
+.message-container img {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 3rem;
+}
+.recherche {
+  padding: 0.3rem;
+  height: 2rem;
+  background-color: lightgray;
+  width: 48rem;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
   .search-container img {
     width: 50px;
     height: 50px;
     flex-shrink: 0;
-    margin-left: 3rem;
+    float: left;
   }
   .message-container img {
     width: 50px;
     height: 50px;
     float: right;
-    margin-right: 3rem;
   }
-  .recherche {
-    padding: 0.3rem;
-    height: 2rem;
-    background-color: lightgray;
-    width: 48rem;
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    max-width: 100%;
   }
-  .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @media screen and (max-width: 768px) {
-    .search-container img {
-      width: 50px;
-      height: 50px;
-      flex-shrink: 0;
-      float: left;
-    }
-    .message-container img {
-      width: 50px;
-      height: 50px;
-      float: right;
-    }
-    input[type="text"] {
-      padding: 5px;
-      border: none;
-      border-radius: 3px;
-      margin-right: 5px;
-      max-width: 50%;
-    }
-  } */
+}

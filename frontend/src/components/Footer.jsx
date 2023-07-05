@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="mt-10">
+    <footer className=" mt-10">
       <div className="footer">
         <Link to="/">
           <div className="logo-site">

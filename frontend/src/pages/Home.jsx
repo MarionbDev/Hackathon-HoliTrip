@@ -5,11 +5,10 @@ import ProposalList from "@components/ProposalList";
 
 export default function Home() {
   return (
-    <header className="App-header">
+    <header className="App-header ">
       <Carrousel />
       <Presentation />
       <ProposalList />
-      {/* <MoodBoard /> */}
     </header>
   );
 }
