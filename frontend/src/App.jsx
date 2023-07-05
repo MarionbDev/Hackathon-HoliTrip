@@ -4,12 +4,14 @@ import Canada from "@pages/Canada";
 import Australia from "@pages/Australia";
 import Brazil from "@pages/Brazil";
 import Header from "@components/Header";
+import SearchCity from "@pages/Search";
+import ContactForm from "@pages/ContactForm";
 import Footer from "./components/Footer";
 import "./App.css";
 import "./components/Header1.css";
 import "./components/Footer.css";
 import "./components/loading.css";
-import RadioRoad from "./components/RadioRoad";
+import RadioRoad from "./pages/RadioRoad";
 import {
   Toronto,
   Ottawa,
@@ -44,28 +46,30 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/canada" element={<Canada />} />
-            <Route path="/canada/toronto" element={<Toronto />} />
-            <Route path="/canada/ottawa" element={<Ottawa />} />
-            <Route path="/canada/montréal" element={<Montreal />} />
-            <Route path="/canada/quebec" element={<Quebec />} />
-            <Route path="/canada/thunder-bay" element={<ThunderBay />} />
-            <Route path="/canada/winnipeg" element={<Winnipeg />} />
-            <Route path="/australia" element={<Australia />} />
-            <Route path="/australia/brisbane" element={<Brisbane />} />
-            <Route path="/australia/sydney" element={<Sydney />} />
-            <Route path="/australia/canberra" element={<Canberra />} />
-            <Route path="/australia/melbourne" element={<Melbourne />} />
-            <Route path="/australia/auburn" element={<Auburn />} />
-            <Route path="/australia/adelaide" element={<Adelaide />} />
-            <Route path="/brazil" element={<Brazil />} />
-            <Route path="/brazil/rio" element={<Rio />} />
-            <Route path="/brazil/sao-paulo" element={<SaoPaulo />} />
-            <Route path="/brazil/curitiba" element={<Curitiba />} />
-            <Route path="/brazil/porto-alegre" element={<PortoAlegre />} />
-            <Route path="/brazil/petropolis" element={<Petropolis />} />
-            <Route path="/brazil/juiz-de-fora" element={<JuizDeFora />} />
+            <Route path="/Canada" element={<Canada />} />
+            <Route path="/Canada/Toronto" element={<Toronto />} />
+            <Route path="/Canada/Ottawa" element={<Ottawa />} />
+            <Route path="/Canada/Montréal" element={<Montreal />} />
+            <Route path="/Canada/Quebec" element={<Quebec />} />
+            <Route path="/Canada/Thunder-bay" element={<ThunderBay />} />
+            <Route path="/Canada/Winnipeg" element={<Winnipeg />} />
+            <Route path="/Australia" element={<Australia />} />
+            <Route path="/Australia/Brisbane" element={<Brisbane />} />
+            <Route path="/Australia/Sydney" element={<Sydney />} />
+            <Route path="/Australia/Canberra" element={<Canberra />} />
+            <Route path="/Australia/Melbourne" element={<Melbourne />} />
+            <Route path="/Australia/Auburn" element={<Auburn />} />
+            <Route path="/Australia/Adelaide" element={<Adelaide />} />
+            <Route path="/Brazil" element={<Brazil />} />
+            <Route path="/Brazil/Rio" element={<Rio />} />
+            <Route path="/Brazil/Sao-paulo" element={<SaoPaulo />} />
+            <Route path="/Brazil/Curitiba" element={<Curitiba />} />
+            <Route path="/Brazil/Porto-alegre" element={<PortoAlegre />} />
+            <Route path="/Brazil/Petropolis" element={<Petropolis />} />
+            <Route path="/Brazil/Juiz-de-fora" element={<JuizDeFora />} />
             <Route path="/radio" element={<RadioRoad />} />
+            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/search" element={<SearchCity />} />
           </Routes>
           <Footer />
         </div>

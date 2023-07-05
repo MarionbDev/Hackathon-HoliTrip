@@ -3,11 +3,11 @@ import loupe from "../assets/radio/loupe.png";
 
 export default function SearchBar({ query, setQuery }) {
   return (
-    <section className=" flex justify-center">
+    <section className=" flex justify-center mb-6">
       <input
-        className=" w-2/6 h-7 rounded-xl px-2 shadow-md my-5 shadow-gray-600 text-black"
+        className="w-3/4 md:w-2/6 h-7 rounded-xl px-2 shadow-md my-5 shadow-gray-600 text-black"
         type="text"
-        placeholder="Make your choice ?"
+        placeholder="Faites votre choix ?"
         onChange={(e) => setQuery(e.target.value)}
         value={query}
       />

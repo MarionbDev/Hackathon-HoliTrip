@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const getVisit = (cityId) => {
   return fetch(
+    // Permet de récupérer les données de visite d'une ville avec l'ID et la clé
     `https://api.opentripmap.com/0.1/en/places/xid/${cityId}?apikey=${
       import.meta.env.VITE_API_KEY
     }`
@@ -19,7 +20,11 @@ const City = ({ cityId, apiKey }) => {
   }, [cityId, apiKey]);
 
   if (!visit) {
-    return <p>Loading page...</p>;
+    return (
+      <div className="min-h-screen flex  flex-col items-center mt-20  md:ml-36 md:mt-2">
+        <p className="md:text-xl mb-20 ">Chargement de la page...</p>
+      </div>
+    );
   }
 
   return (

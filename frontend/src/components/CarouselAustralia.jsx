@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -27,6 +27,9 @@ const datas = [
 ];
 
 export default function CarrouselAustralia() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <Carousel
       autoPlay
@@ -40,10 +43,6 @@ export default function CarrouselAustralia() {
       {datas.map((data) => (
         <div key={data.id}>
           <img src={data.image} alt={data.title} />
-          {/* <div className="overlay">
-            <h1 className="text-6xl uppercase px-4 py-2">{data.title}</h1>
-            <p className="text-xs p-4 py-1 md:text-sm">{data.description}</p>
-          </div> */}
         </div>
       ))}
     </Carousel>
