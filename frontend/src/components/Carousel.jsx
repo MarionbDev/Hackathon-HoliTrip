@@ -42,10 +42,6 @@ export default function Carrousel() {
       {datas.map((data) => (
         <div key={data.id}>
           <img src={data.image} alt={data.title} />
-          {/* <div className="overlay">
-            <h1 className="text-6xl uppercase px-4 py-2">{data.title}</h1>
-            <p className="text-xs p-4 py-1 md:text-sm">{data.description}</p>
-          </div> */}
         </div>
       ))}
     </Carousel>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -26,6 +26,9 @@ const datas = [
 ];
 
 export default function CarrouselCanada() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <Carousel
       autoPlay
